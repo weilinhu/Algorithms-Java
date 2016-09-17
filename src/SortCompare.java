@@ -1,8 +1,15 @@
 import sort.SortUtils;
 
+
+/**
+ * 排序时间对比类
+ * @author Administrator
+ *
+ */
 public class SortCompare {
 
 	public static double time(String alg,Double[] a){
+		SortUtils.show(a);
 		StopWatch timer = new StopWatch();
 		if(alg.equals("Insertion")){
 			Insertion.sort(a);
@@ -24,6 +31,7 @@ public class SortCompare {
 			Heap.sort(a);
 		}
 //		SortUtils.show(a);
+//		SortUtils.isSorted(a);
 		
 		return timer.elapsedTime();
 	}
@@ -47,15 +55,19 @@ public class SortCompare {
 	}
 	
 	public static void main (String[] args){
-		
+//		
 //		double t1 = timeRandomInput("Insertion",1000,100);
 //		double t2 = timeRandomInput("Selection",1000,100);
-		double t3= timeRandomInput("Shell",1000,100);
+//		double t3= timeRandomInput("Shell",1000,100);
+//		double t4= timeRandomInput("Merge",1000,100);
+//		double t5= timeRandomInput("Quick",1000,100);
+//		double t6= timeRandomInput("Heap",1000,100);
 //		System.out.println(t1);
 //		System.out.println(t2);
-		System.out.println(t3);
-		
-		
+//		System.out.println(t3);
+//		System.out.println(t4);
+//		System.out.println(t5);
+//		System.out.println(t6);
 	}
 	
 	
